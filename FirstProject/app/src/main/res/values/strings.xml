@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FirstProject</string>
+
+    <string name="account">Already A Member</string>
+    <string name="signIn">Sign In</string>
+    <string name="sign">Sign up</string>
+    <string name="name">Full Name</string>
+    <string name="email">Email </string>
+    <string name="no">Phone</string>
+    <string name="pass">Password</string>
+    <string name="regi">REGISTER</string>
+    <string name="wel">Welcome to second page </string>
+    <string name="person">Person</string>
+    <string name="first">First Page</string>
+    <string name="second">Second Page</string>
+    <string name="third">Third Page</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="out">Log Out</string>
+    <string name="home">Home Page</string>
+    <string name="verify">Verification Code</string>
+    <string name="code">Please enter the verification code sent</string>
+    <string name="otp">000000</string>
+    <string name="resend"><u>Resend OTP?</u></string>
+    <string name="submit">SUBMIT</string>
+    <string name="success">Successfully SignUp</string>
+    <string name="o">0</string>
+</resources>

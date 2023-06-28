@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignUpActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:padding="12dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/createText"
+        android:text="@string/create"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:padding="8dp"
+        android:layout_marginTop="28dp"
+        android:elevation="32dp"
+        android:fontFamily="@font/open_sans_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageicon"
+        app:srcCompat="@drawable/ic_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createText"
+        android:layout_marginTop="18dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/first"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageicon"
+        android:layout_marginTop="28dp"
+        android:hint="Sahil"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/second"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        android:layout_marginTop="28dp"
+        android:hint="Jangra"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/third"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second"
+        android:layout_marginTop="28dp"
+        android:hint="Jangra442"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etph"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etph"
+        android:theme="@style/text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third"
+        app:layout_constraintEnd_toStartOf="@id/ph"
+        app:layout_constraintBottom_toTopOf="@id/etRePass">
+
+        <AutoCompleteTextView
+            android:id="@+id/outlined_exposed_dropdown_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:inputType="none"
+            android:padding="8dp"
+            android:text="@string/choose" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded"
+        android:digits="0123456789"
+        android:hint="@string/no"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etRePass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etRePass"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
+        app:startIconDrawable="@drawable/ic_baseline_lock_open_24"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/rounded"
+        app:passwordToggleTint="@color/eye"
+
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/ph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edRePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/open_sans_light"
+            android:background="@drawable/rounded"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/emailSign"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRePass"
+        android:layout_marginTop="28dp"
+        android:hint="Email"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dob"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/eddob"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eddob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:endIconDrawable="@drawable/ic_baseline_calendar_month_24"
+        app:endIconMode="custom"
+        app:hintEnabled="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailSign">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dob"
+            android:padding="10dp"
+            android:hint="Choose DOB"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refer"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/refer"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eddob"
+        android:layout_marginTop="28dp"
+        android:hint="ANDROID"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:inputType="textPersonName" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign"
+        android:textSize="16sp"
+        android:elevation="24dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/logbutton"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="34dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/refer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+<!--    android:cropToPadding="true"-->
+<!--    android:scaleType="center"-->
+<!--    android:adjustViewBounds="true"-->
+<!--    android:background="@drawable/backview"-->

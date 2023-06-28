@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_person"
+        android:title="@string/person"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+    <item
+        android:id="@+id/drawer_email"
+        android:title="@string/email"
+        android:icon="@drawable/ic_baseline_email_24"
+        />
+    <item
+        android:id="@+id/drawer_phone"
+        android:title="@string/no"
+        android:icon="@drawable/ic_baseline_phone_24"
+        />
+    <item
+        android:id="@+id/drawer_lock"
+        android:title="@string/out"
+        android:icon="@drawable/baseline_lock_24"
+        />
+
+</menu>

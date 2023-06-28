@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_maps"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.view.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="firstName"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mapsFragment_to_googleMapsFragment"
+            app:destination="@id/googleMapsFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_searchLocationFragment"
+            app:destination="@id/searchLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleMapsFragment"
+        android:name="com.example.view.GoogleMapsFragment"
+        android:label="GoogleMapsFragment" >
+        <action
+            android:id="@+id/action_googleMapsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchLocationFragment"
+        android:name="com.example.view.SearchLocationFragment"
+        android:label="SearchLocationFragment" >
+        <action
+            android:id="@+id/action_searchLocationFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+</navigation>
